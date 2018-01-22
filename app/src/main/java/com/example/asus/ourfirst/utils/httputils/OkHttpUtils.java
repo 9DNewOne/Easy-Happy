@@ -1,6 +1,7 @@
 package com.example.asus.ourfirst.utils.httputils;
 
-import com.example.asus.myapplication.utils.costomintercepter.LoggingInterceptor;
+
+import com.example.asus.ourfirst.utils.costomintercepter.LoggingInterceptor;
 
 import java.util.concurrent.TimeUnit;
 
