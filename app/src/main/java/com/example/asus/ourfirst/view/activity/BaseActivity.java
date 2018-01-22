@@ -20,6 +20,7 @@ public abstract class BaseActivity<V,P extends BasePresenter<V>> extends AppComp
         presenter=inpresenter();
 
         presenter.attachview((V) this);
+        //asdsa
 
     }
 
