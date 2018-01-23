@@ -5,4 +5,5 @@ package com.example.asus.ourfirst.view.viewcallback;
  */
 
 public interface Iview {
+
 }
