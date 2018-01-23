@@ -5,4 +5,5 @@ package com.example.asus.ourfirst.model.http;
  */
 
 public class Model1 {
+
 }
