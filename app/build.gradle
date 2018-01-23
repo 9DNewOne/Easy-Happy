@@ -32,4 +32,12 @@ dependencies {
     compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
     compile 'io.reactivex.rxjava2:rxjava:2.1.7'
     compile 'com.squareup.retrofit2:converter-scalars:2.3.0'
+
+    implementation 'com.android.support:design:26.1.0'
+
+    //fresco
+    compile 'com.facebook.fresco:fresco:1.5.0'
+
+    //BottomTabBar
+    compile 'com.hjm:BottomTabBar:1.1.1'
 }

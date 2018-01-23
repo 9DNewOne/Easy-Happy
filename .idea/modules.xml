@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://C:\Users\win\androidDemo\Easy-Happy\BigFour.iml" filepath="C:\Users\win\androidDemo\Easy-Happy\BigFour.iml" />
       <module fileurl="file://E:\Androidstudio3.0\OneWork\Easy-Happy\BigFour.iml" filepath="E:\Androidstudio3.0\OneWork\Easy-Happy\BigFour.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Easy-Happy.iml" filepath="$PROJECT_DIR$/Easy-Happy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Easy-Happy.iml" filepath="$PROJECT_DIR$/.idea/Easy-Happy.iml" />
+      <module fileurl="file://C:\Users\win\androidDemo\Easy-Happy\Easy-Happy.iml" filepath="C:\Users\win\androidDemo\Easy-Happy\Easy-Happy.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://E:\Androidstudio3.0\OneWork\Easy-Happy\app\app.iml" filepath="E:\Androidstudio3.0\OneWork\Easy-Happy\app\app.iml" />
     </modules>
