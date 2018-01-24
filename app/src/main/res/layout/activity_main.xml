@@ -8,22 +8,40 @@
     tools:context="com.example.asus.ourfirst.view.activity.MainActivity">
 
 
-    <!--主布局内容-->
-    <FrameLayout
+    <android.support.design.widget.CoordinatorLayout
         android:id="@+id/main_content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+
+
+        <com.hjm.bottomtabbar.BottomTabBar
+            android:id="@+id/bottomtabbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true">
+
+        </com.hjm.bottomtabbar.BottomTabBar>
+
+    </android.support.design.widget.CoordinatorLayout>
+
 
     <!--导航菜单-->
-    <android.support.design.widget.NavigationView
+
+   <android.support.design.widget.NavigationView
         android:id="@+id/view_navigation"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/layout_nav_header"
         app:itemIconTint="@color/colorAccent"
         app:itemTextColor="@color/textBlack"
-        app:menu="@menu/navigation_menu" />
+        app:menu="@menu/navigation_menu"
+        android:background="#e4577a"
+        >
+
+    </android.support.design.widget.NavigationView>
+
+
 
 </android.support.v4.widget.DrawerLayout>
