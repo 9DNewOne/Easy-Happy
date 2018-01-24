@@ -14,9 +14,9 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.asus.ourfirst.R;
-import com.example.asus.ourfirst.view.fragment.Fragment01;
-import com.example.asus.ourfirst.view.fragment.Fragment02;
-import com.example.asus.ourfirst.view.fragment.Fragment03;
+import com.example.asus.ourfirst.view.fragment.RecommendFragment;
+import com.example.asus.ourfirst.view.fragment.RrossTalkFragment;
+import com.example.asus.ourfirst.view.fragment.VideoFragment;
 import com.hjm.bottomtabbar.BottomTabBar;
 
 public class MainActivity extends AppCompatActivity {
@@ -48,9 +48,9 @@ public class MainActivity extends AppCompatActivity {
                 .setFontSize(10)
                 .setTabPadding(4, 6, 10)
                 .setChangeColor(Color.RED, Color.DKGRAY)
-                .addTabItem("推荐", R.mipmap.tuijian_select, Fragment01.class)
-                .addTabItem("段子", R.mipmap.duanzi_default, Fragment02.class)
-                .addTabItem("视屏", R.mipmap.video_defaults, Fragment03.class)
+                .addTabItem("推荐", R.mipmap.tuijian_select, RecommendFragment.class)
+                .addTabItem("段子", R.mipmap.duanzi_default, RrossTalkFragment.class)
+                .addTabItem("视屏", R.mipmap.video_defaults, VideoFragment.class)
                 .isShowDivider(false)
                 .setOnTabChangeListener(new BottomTabBar.OnTabChangeListener() {
                     @Override
