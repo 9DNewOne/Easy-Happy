@@ -11,12 +11,12 @@ import android.view.ViewGroup;
 import com.example.asus.ourfirst.R;
 
 /**
- * A simple {@link Fragment} subclass.
+ * 趣视频
  */
-public class Fragment03 extends Fragment {
+public class VideoFragment extends Fragment {
 
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_fragment03, container, false);
+        View view = inflater.inflate(R.layout.fragment_video, container, false);
 
         return view;
 
