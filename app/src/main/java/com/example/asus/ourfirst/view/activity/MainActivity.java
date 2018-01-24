@@ -42,11 +42,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
         ////////////////////////////////mainActivity的底部////////////////////////////////////////////////////////////////////////////
         bottomtabbar.init(getSupportFragmentManager())
                 .setImgSize(35, 35)
                 .setFontSize(10)
-                .setTabPadding(4, 6, 10)
+                .setTabPadding(10, 6, 10)
                 .setChangeColor(Color.RED, Color.DKGRAY)
                 .addTabItem("推荐", R.mipmap.tuijian_select, Fragment01.class)
                 .addTabItem("段子", R.mipmap.duanzi_default, Fragment02.class)
@@ -55,13 +56,13 @@ public class MainActivity extends AppCompatActivity {
                 .setOnTabChangeListener(new BottomTabBar.OnTabChangeListener() {
                     @Override
                     public void onTabChange(int position, String name) {
-
                     }
                 });
         //////////////////////////////////////bottomtabbar/////////////////////////////////////////////////////////////
 
-        mViewNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
 
+
+        mViewNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
