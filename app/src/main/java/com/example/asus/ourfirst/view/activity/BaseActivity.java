@@ -7,6 +7,7 @@ import com.example.asus.ourfirst.presenter.httppresenter.BasePresenter;
 
 
 /**
+ *
  * Created by asus on 2018/1/22.
  */
 
@@ -17,12 +18,21 @@ public abstract class BaseActivity<V,P extends BasePresenter<V>> extends AppComp
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        setContentView(getContentViewId());
+        initView();
+        initData();
         presenter=inpresenter();
 
         presenter.attachview((V) this);
-        //asdsa
 
     }
+
+    protected abstract int getContentViewId();
+
+    protected abstract void initView();
+
+    protected abstract void initData();
 
     @Override
     protected void onDestroy() {

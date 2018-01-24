@@ -42,12 +42,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         ////////////////////////////////mainActivity的底部////////////////////////////////////////////////////////////////////////////
         bottomtabbar.init(getSupportFragmentManager())
                 .setImgSize(35, 35)
                 .setFontSize(10)
-                .setTabPadding(10, 6, 10)
+                .setTabPadding(4, 6, 10)
                 .setChangeColor(Color.RED, Color.DKGRAY)
                 .addTabItem("推荐", R.mipmap.tuijian_select, Fragment01.class)
                 .addTabItem("段子", R.mipmap.duanzi_default, Fragment02.class)
@@ -56,20 +55,22 @@ public class MainActivity extends AppCompatActivity {
                 .setOnTabChangeListener(new BottomTabBar.OnTabChangeListener() {
                     @Override
                     public void onTabChange(int position, String name) {
+
                     }
                 });
-        //////////////////////////////////////bottomtabbar/////////////////////////////////////////////////////////////
 
+        //////////////////////////////////////bottomTabBar////////////////////////////////////////////
 
-
+        //////////////////////////////////////NavigationView导航菜单////////////////////////////////////////////////
         mViewNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
                 item.setChecked(false);
+
                 switch (item.getItemId()) {
                     case R.id.action_concern:
-                        Log.i("我的关心", "onNavigationItemSelected: 我的关心");
                         Toast.makeText(MainActivity.this, "我的关心", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.action_collect:
@@ -92,6 +93,8 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                 }
+
+                //关闭侧拉
                 mDrawerLayout.closeDrawers();
                 return false;
             }
@@ -99,7 +102,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    @Override  //双击退出
+    //////////////////////////////应用退出///////////////////////////////
+    @Override
     public void onBackPressed() {
         long currentTime = System.currentTimeMillis();
         if (currentTime - lastTime < 2 * 1000) {

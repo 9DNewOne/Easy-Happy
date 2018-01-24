@@ -28,7 +28,6 @@
             <item
                 android:id="@+id/ic_menu_night"
                 android:icon="@mipmap/night"
-                android:iconTint="@color/colorNight"
                 android:title="@string/night_mode"
                 tools:targetApi="o" />
 

@@ -11,13 +11,13 @@ import android.view.ViewGroup;
 import com.example.asus.ourfirst.R;
 
 /**
- * A simple {@link Fragment} subclass.
+ *  热门推荐
  */
-public class Fragment01 extends Fragment {
+public class RecommendFragment extends Fragment {
 
 
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_fragment01, container, false);
+        View view = inflater.inflate(R.layout.fragment_recommend, container, false);
 
 
         return view;
